@@ -13,8 +13,8 @@ void main() async {
   String apURL = dotenv.env['SUPABASE_URL']!;
   String anonKey = dotenv.env['SUPABASE_ANON_KEY']!;
   await Supabase.initialize(
-    url: 'https://yxqgpwjoaeaxjounwcrx.supabase.co',
-    anonKey: 'sb_publishable_tQ3KmjjLuI_morjB18vJyw_CKeIyaO1',
+    url: apURL,
+    anonKey: anonKey,
   );
   runApp(const MyApp());
 }
